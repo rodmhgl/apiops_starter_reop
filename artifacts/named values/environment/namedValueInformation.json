@@ -3,6 +3,6 @@
     "displayName": "environment",
     "secret": false,
     "tags": [],
-    "value": "dev"
+    "value": "http://colors-web-dev.azurelaboratory.com/"
   }
 }

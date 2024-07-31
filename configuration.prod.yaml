@@ -3,7 +3,7 @@ namedValues:
   - name: environment
     properties:
       displayName: environment
-      value: prod
+      value: http://colors-web-prd.azurelaboratory.com/
 apis:
   - name: colors-api
     properties:
