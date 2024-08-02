@@ -4,8 +4,7 @@ info:
   description: 'A sample API with information related to a technical conference.  The available resources  include *Speakers*, *Sessions* and *Topics*.  A single write operation is available to provide  feedback on a session.'
   version: '1.0'
 servers:
-  - url: https://api.waelsconsulting.com
-  - url: https://portal.waelsconsulting.com
+  - url: https://apiopsdevapimlab.azure-api.net/conf
 paths:
   /sessions:
     get:
@@ -15,18 +14,15 @@ paths:
       parameters:
         - name: speakername
           in: query
-          style: form
           schema:
             type: string
         - name: dayno
           in: query
           description: Format - int32.
-          style: form
           schema:
             type: integer
         - name: keyword
           in: query
-          style: form
           schema:
             type: string
       responses:
@@ -44,7 +40,6 @@ paths:
           in: path
           description: Format - int32.
           required: true
-          style: simple
           schema:
             type: integer
       responses:
@@ -63,7 +58,6 @@ paths:
           in: path
           description: Format - int32.
           required: true
-          style: simple
           schema:
             type: integer
       responses:
@@ -81,7 +75,6 @@ paths:
           in: path
           description: Format - int32.
           required: true
-          style: simple
           schema:
             type: integer
       requestBody:
@@ -105,12 +98,10 @@ paths:
         - name: dayno
           in: query
           description: Format - int32.
-          style: form
           schema:
             type: integer
         - name: speakername
           in: query
-          style: form
           schema:
             type: string
       responses:
@@ -128,7 +119,6 @@ paths:
           in: path
           description: Format - int32.
           required: true
-          style: simple
           schema:
             type: integer
       responses:
@@ -147,7 +137,6 @@ paths:
           in: path
           description: Format - int32.
           required: true
-          style: simple
           schema:
             type: integer
       responses:
@@ -165,7 +154,6 @@ paths:
           in: path
           description: Format - int32.
           required: true
-          style: simple
           schema:
             type: integer
       responses:
@@ -182,7 +170,6 @@ paths:
         - name: dayno
           in: query
           description: Format - int32.
-          style: form
           schema:
             type: integer
       responses:
@@ -200,7 +187,6 @@ paths:
           in: path
           description: Format - int32.
           required: true
-          style: simple
           schema:
             type: integer
       responses:
@@ -218,7 +204,6 @@ paths:
           in: path
           description: Format - int32.
           required: true
-          style: simple
           schema:
             type: integer
       responses:
@@ -236,7 +221,6 @@ paths:
           in: path
           description: Format - int32.
           required: true
-          style: simple
           schema:
             type: integer
       responses:
